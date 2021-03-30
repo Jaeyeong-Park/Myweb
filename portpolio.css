@@ -1,0 +1,93 @@
+﻿/* 스타일 초기화 */
+* { margin: 0px ; padding: 0px ; }
+header, body, footer { font-size: 14px; font-family: 나눔고딕,굴림,돋음,'Times New Roman',serif; width: 100%; }
+header, footer { text-align : center ; }
+body { margin: auto; }
+footer { position: fixed; bottom: 0px; }
+
+/* 공통 스타일 */
+h1 { padding: 15px; font-size: 30px ; color: white; height:34px;}
+h2 { font-size: 15px; color: white; }
+h3 { margin: 10px; font-size: 30px; color: gray; text-shadow: 4px 4px 7px gray; }
+h1, h2 { background-color:black; }
+a.s_mail {text-decoration:none; color:#443a2d;font:12px dotum, sans-serif;} 
+img { border: 0; padding: 2px; }
+
+nav {text-align: center; margin: 20px 20px; }
+nav > span > a { font-size:30px; font-style: bold; margin: 0 ; padding:3px; border: 2px solid rgb(197, 197, 197); float: center; text-decoration: none; background: rgb(197, 197, 197); color: white; border-radius: 4px; }
+nav > span > a:hover { background: gray; color: white; }
+@media only screen and (min-width: 500px) and (orientation: landscape) {
+	section { width: 70%; float: left; }
+	#reff { width: 20%; 
+		margin-right: 40px;
+		text-align: center; 
+		float: right;
+		background-color : rgb(233, 233, 233);
+		border-radius: 15px;
+		border:1px solid gray;
+	}
+	#pro-table{
+		width: 600px;
+	}
+	footer { clear: both; }
+	
+}
+@media only screen and (max-width : 500px) and (orientation: landscape){
+	#intro{
+		display: none;
+	}
+}
+#intro{
+	position: absolute;
+	top: 50px;
+	left:40px;
+	right: 15px;;
+	width: 180px;
+	float:left;
+	min-height: 340px;
+	border:1px solid gray;
+	background-color:  rgb(233, 233, 233);
+	border-radius: 7px;
+	padding: 9px 8px;
+	text-align: center;
+	
+}
+.content  { overflow: hidden; clear: both; }
+.section1 ul li { list-style-position: inside; list-style-image: url("li2.jpg"); }
+.l_line{
+	border-top: 1px solid gray;
+	border-bottom: 0;
+	padding:5px 0 0 3px;
+	margin:15px 0 0 0;
+}
+#left{
+	position: absolute;
+	left: 0;
+	top: 100px;
+	bottom:0;
+	float: left; width:290px;
+	height: 120%;
+	border-right: 3px solid gray;
+}
+#right{
+	position: relative;
+	margin-left : 340px;
+	
+	
+}
+/* index.html 적용 스타일 */
+#stu-pic { width: 12em; height: 15em; float: center; margin-bottom: 10px; position: relative;}
+
+/* info.html 적용 스타일 */
+#year-table { table-layout: auto; width: 80%; border-collapse: seperate; }
+#year-table thead { background: rgb(233, 233, 233); }
+#logo { position: fixed; top:50%-225px; left:548px; opacity: 0.05; } 
+
+/* study.html 적용 스타일 */
+video { margin: 5px; width: 300px; height: 200px; }
+
+/* career.html 적용 스타일 */
+.semi-pic { width: 8em; height: 8em;  }
+#pic-container { overflow: hidden; }
+
+
